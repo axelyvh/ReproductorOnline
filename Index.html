@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor Online - Axel</title>
+    <link
+      href="https://unpkg.com/video.js/dist/video-js.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="area">
+        <div class="search">
+          <input id="txt_url_video" type="text" class="box" placeholder="INGRESE URL DEL VIDEO" />
+          <span id="btn_repro_video" class="boton">
+            &nbsp;<i class="fas fa-play" aria-hidden="true"></i>&nbsp;Reproducir</i>&nbsp;
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="reproductor_video">
+        <video
+        width="1280px" height="720px"
+        id="video_player"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="http://vjs.zencdn.net/v/oceans.png"
+        data-setup='{ "playbackRates": [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] }'
+      >
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+      </video>
+    </div>
+    
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <script src="http://cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

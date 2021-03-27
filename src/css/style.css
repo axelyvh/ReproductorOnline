@@ -1,0 +1,70 @@
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  width: 100%;
+  margin-top: -100px;
+  background-size: cover;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: center;
+  display: flex;
+  background-position: center;
+  min-height: 200px;
+}
+
+.area {
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.search {
+  width: 150%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.box {
+  width: 100%;
+  min-height: 65px;
+}
+
+.boton {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #e50914;
+  min-height: 70px;
+  width: 70%;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.reproductor_video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vjs-menu .vjs-menu-content {
+  overflow: hidden;
+}
