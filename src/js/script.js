@@ -14,3 +14,9 @@ BtnReproducirVideo.addEventListener("click", function () {
   }
   player.src({ type: "video/mp4", src: url });
 });
+
+player.zoomrotate({
+  // rotate: 90,
+  zoom: 1,
+  debug: false
+});
